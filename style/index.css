@@ -74,6 +74,7 @@ body {
   background-image: url("/style/arkaplan.jpeg");
 }
 header {
+  margin-top: 0px;
   display: inline-block;
   text-align: left;
   background: #353944;
@@ -82,7 +83,16 @@ header {
   color: white;
   padding: 15px;
 }
-
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header div img {
+  width: 100px;
+  height: auto;
+  margin-right: 3vw;
+  filter: brightness(1);
+}
 .content-text {
   vertical-align: bottom;
   padding: 10px 5% 10px 5%;
@@ -108,7 +118,7 @@ h1 {
   margin-bottom: 20px;
 }
 header nav a {
-  margin-top: 130px;
+  margin-bottom: 100px;
   color: white;
   padding: 10px;
   background-color: #169cc6;
@@ -133,8 +143,8 @@ main p {
 section div {
   display: inline-block;
   margin-top: 1vh;
-  margin-left: 0.5vw;
-  width: 24vw;
+  margin-left: 0.3vw;
+  width: 23.7vw;
   height: auto;
   text-align: center;
 }
@@ -151,13 +161,13 @@ nav p {
 }
 footer {
   text-align: center;
-  height: 30vh;
+  height: 170px;
   background: #353944;
   width: 100vw;
 }
 footer p {
   padding: 45px;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   margin-bottom: -20px;
 }
 footer a {
@@ -165,4 +175,13 @@ footer a {
   padding: 10px 25px;
   border-radius: 5px;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  section div {
+    display: inline-block;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    width: 40vw;
+  }
 }
